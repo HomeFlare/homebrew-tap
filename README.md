@@ -1,5 +1,8 @@
 # HomeFlare Homebrew Tap
 
+![license](https://img.shields.io/badge/license-Apache--2.0-green)
+![homebrew](https://img.shields.io/badge/homebrew-tap-orange?logo=homebrew)
+
 Homebrew formulae for [The HomeFlare Project](https://github.com/HomeFlare).
 
 ## Install
@@ -26,3 +29,11 @@ hfs set KEY "value"
 ```bash
 brew upgrade homeflare
 ```
+
+## License
+
+Apache-2.0
+
+## More Info
+
+Visit [docs.homeflare.dev](https://docs.homeflare.dev) for full documentation.

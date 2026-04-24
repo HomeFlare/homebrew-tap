@@ -1,0 +1,29 @@
+name: Homebrew Audit
+
+on:
+  pull_request:
+    paths:
+      - 'Formula/**'
+  push:
+    branches:
+      - main
+    paths:
+      - 'Formula/**'
+
+jobs:
+  audit:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
+      - name: Audit formulae
+        run: |
+          brew audit --strict --online Formula/*.rb
+
+      - name: Test formulae
+        run: |
+          brew test-bot --only-formulae --tap=homeflare/tap

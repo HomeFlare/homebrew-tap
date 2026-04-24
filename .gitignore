@@ -1,0 +1,17 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Homebrew
+*.bottle*
+*.tar.gz
+
+# Logs
+*.log
