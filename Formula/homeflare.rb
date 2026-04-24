@@ -5,7 +5,7 @@ class Homeflare < Formula
   sha256 "676000fdec7cfa9159cbf36378992fc08899e37c36a7603854eef3aa55ec8bde"
   license "Apache-2.0"
 
-  depends_on "node@22"
+  depends_on "node@24"
 
   def install
     system "npm", "install", *std_npm_args
